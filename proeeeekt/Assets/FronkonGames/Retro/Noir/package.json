@@ -1,0 +1,32 @@
+{
+  "name": "com.fronkongames.retro.noir",
+  "version": "2.0.0",
+  "displayName": "Retro: Noir",
+  "description": "Noir effect for Unity URP. Volume-based architecture.",
+  "unity": "6000.0",
+  "unityRelease": "58f2",
+  "dependencies": { },
+  "keywords": [
+    "retro",
+    "noir",
+    "black and white",
+    "vintage",
+    "classic",
+    "sepia",
+    "grayscale",
+    "dither",
+    "posterization",
+    "vignette",
+    "brightness",
+    "contrast",
+    "gamma",
+    "darkness",
+    "brightness color",
+    "darkness color"
+  ],
+  "author": {
+    "name": "Fronkon Games",
+    "email": "fronkongames@gmail.com",
+    "url": "https://fronkongames.github.io/"
+  }
+}
