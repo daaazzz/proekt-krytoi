@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: 99c9720ab356a0642a771bea13969a05
-DefaultImporter:
+guid: 94c32c4a79d4e244e9945ff03708a7d8
+NativeFormatImporter:
   externalObjects: {}
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +11,5 @@ AssetOrigin:
   productId: 119474
   packageName: Two Handed Sword FREE
   packageVersion: 1.0
-  assetPath: Assets/Scenes/SampleScene.unity
+  assetPath: Assets/TwoHandedSwordFREE/Materials/TwoHandedSword_New.mat
   uploadId: 260505

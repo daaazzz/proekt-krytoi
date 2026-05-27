@@ -465,6 +465,7 @@ MonoBehaviour:
   - {fileID: -6288072647309666549}
   - {fileID: 7518938298396184218}
   - {fileID: -1410297666881709256}
+  - {fileID: 8454721133425110261}
 --- !u!114 &853819529557874667
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -920,6 +921,232 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
   scale:
+    m_OverrideState: 1
+    m_Value: 1
+--- !u!114 &8454721133425110261
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4299d9e0e0bda21468af6686229623ff, type: 3}
+  m_Name: NoirVolume
+  m_EditorClassIdentifier: FronkonGames.Retro.Noir::FronkonGames.Retro.Noir.NoirVolume
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  method:
+    m_OverrideState: 1
+    m_Value: 0
+  noirIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  ditherSpread:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  ditherDensity:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  ditherColorBlend:
+    m_OverrideState: 1
+    m_Value: 16
+  dotScreenGridSize:
+    m_OverrideState: 1
+    m_Value: 92
+    min: 8
+    max: 256
+  dotScreenLuminanceGain:
+    m_OverrideState: 1
+    m_Value: 0.3
+    min: 0
+    max: 1
+  dotScreenColorBlend:
+    m_OverrideState: 1
+    m_Value: 13
+  halftoneSize:
+    m_OverrideState: 1
+    m_Value: 2
+    min: 0
+    max: 10
+  halftoneAngle:
+    m_OverrideState: 1
+    m_Value: 30
+    min: 0
+    max: 360
+  halftoneThreshold:
+    m_OverrideState: 1
+    m_Value: 0.75
+    min: 0
+    max: 1
+  halftoneColorBlend:
+    m_OverrideState: 1
+    m_Value: 16
+  linesCount:
+    m_OverrideState: 1
+    m_Value: 4
+    min: 1
+    max: 10
+  linesGranularity:
+    m_OverrideState: 1
+    m_Value: 0.25
+    min: 0
+    max: 1
+  linesThreshold:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  linesColorBlend:
+    m_OverrideState: 1
+    m_Value: 16
+  duoToneIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  duoToneBrightnessColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  duoToneDarknessColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.05, g: 0.05, b: 0.05, a: 1}
+  duoToneThreshold:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  duoToneLuminanceMinRange:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  duoToneLuminanceMaxRange:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  duoToneSoftness:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  duoToneExposure:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 5
+  duoToneEmbossDark:
+    m_OverrideState: 1
+    m_Value: 0.05
+    min: 0
+    max: 1
+  duoToneColorBlend:
+    m_OverrideState: 1
+    m_Value: 16
+  sepiaIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  chromaticAberrationIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  blotchesIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  blotchesSpeed:
+    m_OverrideState: 1
+    m_Value: 10
+    min: 0
+    max: 33
+  vignetteIntensity:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 1
+  vignetteSize:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 2
+  vignetteColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  vignetteSmoothness:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0.01
+    max: 1
+  vignetteTimeVariation:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  filmGrainIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  filmGrainSpeed:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  scratchesIntensity:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  scratchesSpeed:
+    m_OverrideState: 1
+    m_Value: 0.5
+    min: 0
+    max: 1
+  brightness:
+    m_OverrideState: 1
+    m_Value: 0
+    min: -1
+    max: 1
+  contrast:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 10
+  gamma:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0.1
+    max: 10
+  hue:
+    m_OverrideState: 1
+    m_Value: 0
+    min: 0
+    max: 1
+  saturation:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+    max: 2
+  affectSceneView:
+    m_OverrideState: 1
+    m_Value: 0
+  useScaledTime:
     m_OverrideState: 1
     m_Value: 1
 --- !u!114 &9001657382290151224
