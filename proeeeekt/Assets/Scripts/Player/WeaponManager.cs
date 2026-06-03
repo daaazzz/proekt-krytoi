@@ -16,6 +16,9 @@ public class WeaponManager : MonoBehaviour
     public Collider swordCollider; // Коллайдер на лезвии меча
     [SerializeField]public int attackDamage = 10;  // Урон 
 
+    public PlayerStamina stamina;
+    public float attackStaminaCost = 15f;
+
     [Header("НАСТРОЙКА АМПЛИТУДЫ")]
     [Range(0f, 180f)] public float strike1_Width = 120f;
     [Range(0f, 180f)] public float strike2_Width = 120f;
@@ -64,7 +67,14 @@ public class WeaponManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            StartCoroutine(PlayDynamicCombo());
+            if (stamina != null && stamina.TryConsume(attackStaminaCost))
+            {
+                StartCoroutine(PlayDynamicCombo());
+            }
+            else
+            {
+                Debug.Log("Недостаточно стамины для атаки!");
+            }
         }
     }
 
@@ -170,6 +180,14 @@ public class WeaponManager : MonoBehaviour
         {
             Debug.Log("<color=red>[УДАР ПО ВРАГУ]</color> Наносим урон объекту: " + other.name);
             enemy.TakeDamage(attackDamage);
+            StartCoroutine(HitStop(0.05f));
         }
+    }
+    IEnumerator HitStop(float duration)
+    {
+        float originalTimeScale = Time.timeScale;
+        Time.timeScale = 0.1f; // Замедление времени
+        yield return new WaitForSecondsRealtime(duration);
+        Time.timeScale = originalTimeScale; // Возврат в нормальное время
     }
 }

@@ -19,20 +19,32 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("--- START ЗАПУЩЕН ---");
+
         currentHealth = maxHealth;
         currentEstusCharges = estusMaxCharges;
 
-        // Настраиваем полоску UI
         if (healthSlider != null)
         {
             healthSlider.maxValue = maxHealth;
             healthSlider.value = maxHealth;
+            Debug.Log("Слайдер найден и настроен.");
+        }
+        else
+        {
+            Debug.LogWarning("Слайдер НЕ найден!");
         }
 
-        // Обновляем текст эстуса при старте игры
-        UpdateEstusUI();
-
-        Debug.Log($"[ИГРОК] Старт. HP: {currentHealth}. Хилок: {currentEstusCharges}");
+        if (estusText != null)
+        {
+            UpdateEstusUI();
+            Debug.Log("Текст найден, UpdateEstusUI вызван.");
+        }
+        else
+        {
+            Debug.LogError("ОШИБКА: estusText пустой в переменной скрипта!");
+        }
+    
     }
 
     void Update()
@@ -85,8 +97,10 @@ public class PlayerHealth : MonoBehaviour
 
         // ОБНОВЛЯЕМ ТЕКСТ НА ЭКРАНЕ
         UpdateEstusUI();
-
-        Debug.Log($"[ЛЕЧЕНИЕ] Хилок осталось: {currentEstusCharges}");
+        if (estusText != null)
+        
+            Debug.Log($"[ЛЕЧЕНИЕ] Хилок осталось: {currentEstusCharges}");
+        
     }
 
     // Отдельный маленький метод, который красиво обновляет надпись

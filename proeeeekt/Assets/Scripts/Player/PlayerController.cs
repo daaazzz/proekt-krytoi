@@ -21,6 +21,9 @@ public class PlayerController : MonoBehaviour
     public float rollDuration = 0.4f;
     public float rollSpeed = 12f;
 
+    public PlayerStamina stamina;
+    public float rollStaminaCost = 25f;
+
     [HideInInspector] public bool isRolling = false;
     [HideInInspector] public bool isInvincible = false;
 
@@ -84,9 +87,17 @@ public class PlayerController : MonoBehaviour
 
     void HandleRollInput()
     {
+        // Добавили проверку: stamina.TryConsume
         if (Input.GetKeyDown(KeyCode.LeftShift) && moveDirection.magnitude > 0 && characterController.isGrounded)
         {
-            StartCoroutine(RollRoutine());
+            if (stamina != null && stamina.TryConsume(rollStaminaCost))
+            {
+                StartCoroutine(RollRoutine());
+            }
+            else
+            {
+                Debug.Log("Недостаточно стамины для переката!");
+            }
         }
     }
 
